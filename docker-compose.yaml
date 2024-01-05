@@ -10,7 +10,7 @@ services:
     ports:
       - "3001:3001" # host:container
     volumes:
-      - "uptime-kuma:/app/data"
+      - "/home/serveradmin/home_datacenter/uptime-kuma/data/uptime-kuma-data:/app/data"
     security_opt:
       - "no-new-privileges:true"
 volumes:
